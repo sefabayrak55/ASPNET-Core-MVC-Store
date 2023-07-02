@@ -20,4 +20,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\css\" />
+    <Folder Include="wwwroot\lib\js\" />
+  </ItemGroup>
+
 </Project>

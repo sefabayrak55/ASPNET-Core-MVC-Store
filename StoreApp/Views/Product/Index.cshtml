@@ -1,13 +1,7 @@
 ﻿@model List<Product>
 
-@section Footer{
-    <div>
-        Only For Index footer
-    </div>
-}
-
 @foreach (Product prd in Model)
 {
-    <partial name="_ProductCard" model="@prd"/>
-    <hr/>
+    <partial name="_ProductCard" model="@prd" />
+    <hr />
 }

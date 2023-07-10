@@ -1,28 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using StoreApp.Models;
-using System.Net.WebSockets;
+using Repositories;
+using Repositories.Contracts;
+using Services.Contracts;
 
 namespace StoreApp.Controllers
 {
     public class ProductController : Controller
     {
-        private readonly RepositoryContext _repositoryContext;
+        private readonly IServiceManager _manager;
 
-        public ProductController(RepositoryContext repositoryContext)
+        public ProductController(IServiceManager manager)
         {
-            _repositoryContext = repositoryContext;
+            _manager = manager;
         }
 
         public IActionResult Index()
         {
-            var products = _repositoryContext.Products.ToList();
+            var products = _manager.ProductService.GetAllProducts(false);
             return View(products);
         }
 
-        public IActionResult Get(int id)
+        public IActionResult Get([FromRoute(Name="id")] int id)
         {
-            var product = _repositoryContext.Products.First(p => p.ProductId.Equals(id));
+            var product = _manager.ProductService.GetOneProduct(id, false);
             return View(product);
         }
     }

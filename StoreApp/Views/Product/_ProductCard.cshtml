@@ -1,6 +1,8 @@
-﻿@model Product
+﻿@using Entities.Models
 
-<div class="col-sm-12 col-md-4 col-lg-2 my-3">
+@model Product
+
+<div class="col-sm-12 col-md-4 my-3">
     <!-- Card -->
     <div class="card">
         <!-- Card image -->
@@ -19,7 +21,7 @@
             <h4 class="card-title">@Model.ProductName</h4>
             <!-- Text -->
             <p class="card-text">
-                @Model.ProductPrice&nbps;₺
+                @Model.ProductPrice ₺
             </p>
             <!-- Button -->
             <a class="btn btn-outline-primary" asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a>

@@ -26,7 +26,7 @@
                     <td>
                         <div class="btn-group">
                             <a class="btn btn-outline-warning" asp-action="Update" asp-route-id="@prd.ProductId"><i class="fa-solid fa-pen-to-square"></i></a>
-                            <a class="btn btn-outline-danger" asp-controller="Delete" asp-route-id="@prd.ProductId"><i class="fa-solid fa-trash"></i></a>
+                            <a class="btn btn-outline-danger" asp-action="Delete" asp-route-id="@prd.ProductId"><i class="fa-solid fa-trash"></i></a>
                             <a class="btn btn-outline-info" target="_blank" asp-area="" asp-controller="Product" asp-action="Get" asp-route-id="@prd.ProductId"><i class="fa-solid fa-search"></i></a>
                         </div>
                     </td>

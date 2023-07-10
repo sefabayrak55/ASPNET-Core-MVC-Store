@@ -35,7 +35,7 @@ namespace Repositories
 
         public void Remove(T entity)
         {
-            throw new NotImplementedException();
+            _context.Set<T>().Remove(entity);
         }
     }
 }

@@ -6,10 +6,12 @@ namespace Entities.Models
     {
         public int ProductId { get; set; }
 
-        [Required(ErrorMessage = "Product Title is required.")]
         public string? ProductName { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Product Price is required.")]
         public decimal ProductPrice { get; set; }
+
+        public int? CategoryId { get; set; }
+
+        public Category? Category { get; set; } // Navigation property
     }
 }

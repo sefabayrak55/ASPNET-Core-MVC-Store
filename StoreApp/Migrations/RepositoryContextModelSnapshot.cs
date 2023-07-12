@@ -58,11 +58,17 @@ namespace StoreApp.Migrations
                     b.Property<int?>("CategoryId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("ProductPrice")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Summary")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ProductId");
@@ -76,64 +82,82 @@ namespace StoreApp.Migrations
                         {
                             ProductId = 1,
                             CategoryId = 2,
+                            ImageUrl = "/productImages/1.jpg",
                             ProductName = "Computer",
-                            ProductPrice = 12000m
+                            ProductPrice = 12000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 2,
                             CategoryId = 2,
+                            ImageUrl = "/productImages/2.jpg",
                             ProductName = "iPhone",
-                            ProductPrice = 13000m
+                            ProductPrice = 13000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 3,
                             CategoryId = 2,
+                            ImageUrl = "/productImages/3.jpg",
                             ProductName = "Printer",
-                            ProductPrice = 14000m
+                            ProductPrice = 14000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 4,
                             CategoryId = 2,
+                            ImageUrl = "/productImages/4.jpg",
                             ProductName = "Monitor",
-                            ProductPrice = 15000m
+                            ProductPrice = 15000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 5,
                             CategoryId = 2,
+                            ImageUrl = "/productImages/5.jpg",
                             ProductName = "Keyboard",
-                            ProductPrice = 15000m
+                            ProductPrice = 15000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 6,
                             CategoryId = 1,
+                            ImageUrl = "/productImages/6.jpg",
                             ProductName = "Phone",
-                            ProductPrice = 15000m
+                            ProductPrice = 15000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 7,
                             CategoryId = 1,
+                            ImageUrl = "/productImages/7.jpg",
                             ProductName = "Charger",
-                            ProductPrice = 15000m
+                            ProductPrice = 15000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 8,
                             CategoryId = 3,
+                            ImageUrl = "/productImages/8.jpg",
                             ProductName = "Bike",
-                            ProductPrice = 15000m
+                            ProductPrice = 15000m,
+                            Summary = ""
                         },
                         new
                         {
                             ProductId = 9,
                             CategoryId = 3,
+                            ImageUrl = "/productImages/9.jpg",
                             ProductName = "Bike Wheel",
-                            ProductPrice = 16000m
+                            ProductPrice = 16000m,
+                            Summary = ""
                         });
                 });
 

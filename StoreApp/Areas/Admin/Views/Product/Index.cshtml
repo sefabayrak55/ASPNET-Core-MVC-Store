@@ -11,6 +11,7 @@
         <thead>
             <tr>
                 <th>ID</th>
+                <th>Images</th>
                 <th>Product Title</th>
                 <th>Price</th>
                 <th>Category</th>
@@ -20,8 +21,9 @@
         <tbody>
             @foreach (var prd in Model)
             {
-                <tr>
+                <tr class="align-middle">
                     <td>@prd.ProductId</td>
+                    <td><img class="rounded" src="@prd?.ImageUrl" width="75"/></td>
                     <td>@prd.ProductName</td>
                     <td>@prd.ProductPrice ₺</td>
                     <td>@prd.CategoryId</td>

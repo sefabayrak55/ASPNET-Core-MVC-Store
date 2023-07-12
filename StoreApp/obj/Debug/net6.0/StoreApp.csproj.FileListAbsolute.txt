@@ -255,3 +255,17 @@ C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\obj\Debug\net6.0\refint\S
 C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\obj\Debug\net6.0\StoreApp.pdb
 C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\obj\Debug\net6.0\StoreApp.genruntimeconfig.cache
 C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\obj\Debug\net6.0\ref\StoreApp.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\Enums.NET.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\MathNet.Numerics.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\NPOI.Core.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\NPOI.OOXML.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\NPOI.OpenXml4Net.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\NPOI.OpenXmlFormats.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\ICSharpCode.SharpZipLib.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\SixLabors.Fonts.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\SixLabors.ImageSharp.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\System.Security.Cryptography.Xml.dll
+C:\Users\bayraksefa\source\repos\Course\Store\StoreApp\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

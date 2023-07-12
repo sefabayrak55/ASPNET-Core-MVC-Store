@@ -7,7 +7,7 @@
     <div class="card">
         <!-- Card image -->
         <div class="view overlay">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).webp"
+            <img class="card-img-top" src="@Model?.ImageUrl"
                  alt="Card image cap">
             <a href="#!">
                 <div class="mask rgba-white-slight"></div>
@@ -24,8 +24,14 @@
                 @Model.ProductPrice ₺
             </p>
             <!-- Button -->
-            <a class="btn btn-outline-primary" asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a>
-
+            <div class="btn btn-group">
+                <a class="btn btn-outline-primary" asp-action="Get" asp-route-id="@Model.ProductId">Get Details</a>
+                <form id="@Model.ProductId" asp-page="/Cart" method="post">
+                    <input type="hidden" asp-for="ProductId"/>
+                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                    <button type="submit" class="btn btn-outline-warning"><i class="fa-solid fa-cart-plus"></i></button>
+                </form>
+            </div>
         </div>
 
     </div>

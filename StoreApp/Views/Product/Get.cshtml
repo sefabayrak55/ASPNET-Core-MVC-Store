@@ -7,8 +7,8 @@
     <div class="card">
         <!-- Card image -->
         <div class="view overlay">
-            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).webp"
-                 alt="Card image cap">
+            <img class="card-img-top" src="@Model?.ImageUrl"
+                 alt="@Model?.ProductName">
             <a href="#!">
                 <div class="mask rgba-white-slight"></div>
             </a>
@@ -32,4 +32,9 @@
 <div class="btn-group">
     <a class="btn btn-primary" asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house"></i>&nbsp;Home</a>
     <a class="btn btn-outline-primary" asp-controller="Product" asp-action="Index"><i class="fa-solid fa-list"></i>&nbsp;Product List</a>
+    <form id="@Model.ProductId" asp-page="/Cart" method="post">
+        <input type="hidden" asp-for="ProductId" />
+        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+        <button type="submit" class="btn btn-outline-warning"><i class="fa-solid fa-cart-plus"></i></button>
+    </form>
 </div>

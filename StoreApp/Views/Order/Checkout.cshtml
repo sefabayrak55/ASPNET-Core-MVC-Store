@@ -1,0 +1,46 @@
+﻿@model Order
+
+<div class="text-danger" asp-validation-summary="All"></div>
+
+<form method="post" asp-action="Checkout">
+    <div class="row g-5 my-3">
+        <div class="col-md-7 col-lg-8">
+            <h4 class="mb-3">Billing address</h4>
+                <div class="row g-3">
+                    <div class="col-12">
+                        <label asp-for="Name" class="form-label">Full Name</label>
+                        <input class="form-control" asp-for="Name" placeholder="">
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Line1" class="form-label">Line1</label>
+                        <input class="form-control" asp-for="Line1" placeholder="">
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Line2" class="form-label">Line2</label>
+                        <input class="form-control" asp-for="Line2" placeholder="">
+                    </div>
+
+                    <div class="col-12">
+                        <label asp-for="Line3" class="form-label">Line3</label>
+                        <input class="form-control" asp-for="Line3" placeholder="">
+                    </div>
+
+                    <div class="col-md-5">
+                        <label asp-for="City" class="form-label">City</label>
+                        <input class="form-control" asp-for="City" placeholder="">
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="form-check">
+                    <input class="form-check-input" asp-for="GiftWrap">
+                    <label class="form-check-label" asp-for="GiftWrap">Is it Gift?</label>
+                </div>
+
+                <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+        </div>
+    </div>
+</form>
